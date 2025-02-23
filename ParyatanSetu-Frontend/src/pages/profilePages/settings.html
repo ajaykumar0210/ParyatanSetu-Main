@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - ParyatanSetu</title>
+    <link rel="stylesheet" href="settings-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ParyatanSetu</h1>
+            <a href="#" class="back-link">Back to Profile</a>
+        </header>
+
+        <main>
+            <h2>Settings</h2>
+
+            <!-- Profile Visibility Section -->
+            <section class="settings-section">
+                <h3>Profile Visibility</h3>
+                <div class="visibility-option">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="profileVisibility">
+                        <span class="checkmark"></span>
+                        Make my profile public
+                    </label>
+                </div>
+                <button class="save-btn" onclick="saveSettings()">Save Visibility Settings</button>
+            </section>
+
+            <!-- Sign Out Section -->
+            <section class="settings-section">
+                <h3>Sign Out</h3>
+                <button class="signout-btn" onclick="handleSignOut()">Sign Out</button>
+            </section>
+
+            <!-- Danger Zone -->
+            <section class="danger-zone">
+                <h3>Danger Zone</h3>
+                <button class="delete-btn" onclick="confirmDelete()">Delete Account</button>
+            </section>
+        </main>
+    </div>
+    <script src="settings-script.js"></script>
+</body>
+</html> 

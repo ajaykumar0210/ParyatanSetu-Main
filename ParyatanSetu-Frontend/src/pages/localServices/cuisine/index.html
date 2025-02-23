@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Cuisine - ParyatanSetu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <nav class="navbar">
+        <a href="#" class="logo-container">
+            <img src="/placeholder.svg?height=40&width=40" alt="ParyatanSetu Logo" class="logo">
+            <span>ParyatanSetu</span>
+        </a>
+        <div class="login-icon">👤</div>
+    </nav> -->
+
+    <section class="main-section">
+        <div class="main-content">
+            <h1>Local Cuisine</h1>
+            <div class="search-container">
+                <div class="input-group">
+                    <label for="search-input">Destination</label>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        list="cities-list" 
+                        placeholder="Where are you going?"
+                        autocomplete="off"
+                    />
+                    <datalist id="cities-list">
+                        <option value="Delhi">
+                        <option value="Mumbai">
+                        <option value="Bangalore">
+                        <option value="Chennai">
+                        <option value="Kolkata">
+                        <option value="Hyderabad">
+                        <option value="Jaipur">
+                        <option value="Goa">
+                    </datalist>
+                </div>
+                <div class="input-group">
+                    <label for="date-input">Date</label>
+                    <input type="date" id="date-input" required />
+                </div>
+                <button id="search-button">
+                    <i class="fas fa-search"></i>
+                    Search
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="results-section">
+        <div class="loader" id="loader"></div>
+        <div class="no-results" id="no-results">No data found</div>
+        <div id="results-container" class="results-container"></div>
+        <div class="ashoka-chakra"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
